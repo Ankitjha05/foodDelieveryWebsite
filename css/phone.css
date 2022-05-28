@@ -1,0 +1,62 @@
+/*Navigation*/
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+
+/*home section*/
+#home{
+    height: 305px;
+    padding: 3px 8px;
+}
+#home::before{
+    height: 400px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/*services section*/
+#services{
+    flex-direction: column;
+}
+
+#sevices.box{
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+/*client section*/
+#clients{
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+/* #client-section::before{
+    height: 211px;
+    if we use this than wrapping is not working
+} */
+#clients img{
+    width: 90px;
+    padding: 6px;
+    height: auto;
+}
+
+/*contact us section*/
+#contact{
+    margin: -40px;
+}
+
+/*utility classes*/
+.h-primary{
+   font-size: 20px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}

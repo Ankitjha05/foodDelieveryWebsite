@@ -1,0 +1,226 @@
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS variables in this project below fnction (root)will not use ut just for knowledge written here */
+:root {
+    --navbar-height: 59px;
+}
+
+/*Navigation bar section*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#logo img {
+    height: 55px;
+    margin: 3px 6px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li {
+    /* color: #000; */
+    list-style: none;
+    /*dot will not show in the list*/
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    /*underline will be gone*/
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*Home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 328px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    image-rendering: -webkit-optimize-contrast;
+    /*for removing of blurrness in image*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 400px;
+    /*if we 100% here than during inspection height if this also changes so use px instead*/
+    width: 100%;
+    z-index: -1;
+    opacity: .90;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/*Services Section*/
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px;
+    border-radius: 26px;
+    background-color: rgb(231, 216, 195);
+}
+
+#services .box img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    /*to bring image inside box at center*/
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/*client section*/
+#clients-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    background: url(../image/fodbcgrnd2.png);
+    position: absolute;
+    width: 100%;
+    height: 357px;
+    z-index: -1;
+    opacity: .4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 180px;
+}
+
+/* contact section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../contact-us.jpg) no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.9rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/*utility classes below classes can be used heavily*/
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 16px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor:pointer;
+}
+
+.center {
+    text-align: center;
+}
